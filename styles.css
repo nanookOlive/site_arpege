@@ -5,44 +5,25 @@ body{
     transition: background 1s ease; /*change de couleur au scroll*/
     font-family: 'Montserrat', sans-serif;
 }
+html{
+    scroll-behavior: smooth;
 
+}
 #deli
 {
     position :absolute;
     width:10px;
-    height:5000px;
+    height:Opx;
     left:50%;
     transform:translateX(-50%);
-    transition: all 500ms ease;
-    background-color:white;
-    top:1700px;
-    border:1px solid black;
-}
-
-#rond{
-
-    position:fixed;
-    height:40px;
-    width:40px;
-    transform:translateX(-50%);
-    left:50%;
+    transition: all 100ms ease;
     background-color:white;
     border:1px solid black;
-    border-radius: 50%;
-    top:400px;
-    transition:1s;
+    top:1650px;
+    border-radius: 15px;
 }
 
-#rondtest{
-    
-    position:absolute;
-    height:40px;
-    width:40px;
-    background-color:red;
-    border:1px solid black;
-    border-radius: 50%;
-    top:2100px;
-}
+
 #ban{
 
     position:fixed;
@@ -225,7 +206,6 @@ ul{
     width:90%;
     transition: all 500ms ease;
     align-self: flex-end;
-    
 }
 
 #eveil img

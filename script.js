@@ -3,23 +3,16 @@ var bou=document.getElementsByTagName('body')[0];
 bou.style.backgroundColor='#fff';
 var ban=document.getElementById("ban");
 var ev=document.getElementById("eveil");
-var rond=document.getElementById("rondtest")
 var deli=document.getElementById("deli");
 
-const bobo = document.querySelector('.bloc_deli')
 
-window.addEventListener('scroll', () =>{
 
-    const{scrollTop}=document.documentElement;
-    console.log('scrolltop :'+scrollTop);
-})
-
+  
 
 window.onscroll = function (event)
 {
 
     var scroll=window.pageYOffset;
-    console.log(scroll);
 
     if(scroll<1000){
     bou.style.backgroundColor="#fff";
@@ -29,6 +22,8 @@ window.onscroll = function (event)
 
 
 }
+
+
 
     
     else if(scroll >=1000 && scroll <3000)
@@ -53,8 +48,21 @@ window.onscroll = function (event)
         bou.style.backgroundColor='#fff';
     }
 }
+window.addEventListener('scroll',()=>
+{
+    
+    let dec =document.querySelector("#decouvrir")
+    let pos = dec.getBoundingClientRect()
+    console.log(pos.y)
+    var taille= 100;
+    taille += -pos.y ;
+    console.log(taille)
+    deli.style.height =taille + 'px'
 
 
+    
+})  
+/*animation des blocs text au scroll*/
 const ratio= .1;
 const options={
     root:null,

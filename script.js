@@ -54,7 +54,7 @@ window.addEventListener('scroll',()=>
     let dec =document.querySelector("#decouvrir")
     let pos = dec.getBoundingClientRect()
     console.log(pos.y)
-    var taille= 100;
+    var taille= 200;
     taille += -pos.y ;
     console.log(taille)
     deli.style.height =taille + 'px'

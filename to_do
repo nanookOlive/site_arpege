@@ -11,6 +11,8 @@ animation des boutons en savoir plus
 slider icones instruments vers profs
 
 slider avec bouton droite et gauche. query selector ?
-margin-left or right if 
+margin-left or right if marginFlag >= 0 && <= 4500
 bouton height 500 px
 width 50 px
+color change onclick 
+faire sur trois slide 

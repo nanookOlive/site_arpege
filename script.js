@@ -4,7 +4,7 @@ bou.style.backgroundColor='#fff';
 var ban=document.getElementById("ban");
 var ev=document.getElementById("eveil");
 var deli=document.getElementById("deli");
-
+var parcours =document.getElementById("parcours")
 
 
   
@@ -15,31 +15,21 @@ window.onscroll = function (event)
     var scroll=window.pageYOffset;
 
     if(scroll<1000){
-    bou.style.backgroundColor="#fff";
-    bou.style.color='black';
+   
     ban.style.backgroundColor='#22b9a1'
-    ev.style.backgroundColor='#fff';
 
 
 }
 
-
-
-    
     else if(scroll >=1000 && scroll <3000)
     {
-     /*   bou.style.backgroundColor="#f39c12";*/
        
         ban.style.backgroundColor='#f39c12'
-        ev.style.background='linear-gradient(130deg,rgba(243,156,18)0%,rgba(243,156,18,1)35%,rgba(255,255,255,1)100%)'
 
     }
-   
 
-    
     else if(scroll>=3000 && scroll < 3600)
     {
-        /*bou.style.backgroundColor='#22b9a1';*/
         ban.style.backgroundColor='#22b9a1'
     }
 
@@ -48,6 +38,8 @@ window.onscroll = function (event)
         bou.style.backgroundColor='#fff';
     }
 }
+
+/*agrandissement barre de défilement verticale au scroll*/ 
 window.addEventListener('scroll',()=>
 {
     
@@ -56,11 +48,29 @@ window.addEventListener('scroll',()=>
     console.log(pos.y)
     var taille= 200;
     taille += -pos.y ;
-    console.log(taille)
+    console.log('taille du bouzin : '+taille)
     deli.style.height =taille + 'px'
 
-
     
+    if(taille > 300 && taille < 1000)
+    {
+        ev.style.backgroundColor="#f39c12"
+        ev.style.color="#fff"}
+    
+
+    else if(taille >1200 && taille < 2000)
+        {parcours.style.backgroundColor='#f39c12'
+        parcours.style.color='#fff'
+    
+    }
+    else {
+
+        ev.style.backgroundColor="#fff"
+        ev.style.color="black"
+        parcours.style.backgroundColor='#fff'
+        parcours.style.color='black'
+
+    }
 })  
 /*animation des blocs text au scroll*/
 const ratio= .1;

@@ -81,17 +81,17 @@ html{
     margin:0;
 }
 /*NAV*/
-li{
+#ban nav li{
     list-style: none;
     margin:5px;
 
 }
-ul{
+#ban nav ul{
     display: flex;
     
 }
 
-nav{
+#ban nav{
     position:absolute;
     width:33%;
     left:0;
@@ -100,7 +100,7 @@ nav{
     list-style: none;
     
 }
-nav a
+#ban nav a
 {
     text-decoration: none;
     color:#fff;
@@ -145,7 +145,7 @@ nav .dec a:hover{
 
 }
 
-ul{
+nav ul{
     border-radius: 15px;
 }
 
@@ -313,7 +313,86 @@ ul{
     transform:translateY(0);
     transition:1s cubic-bezier(.5,0,0,1);
 }
+.mamaDiv
+{
+    margin-top:100px;
+    position: absolute;
+    width:1000px;
+    height:500px;
+    border-radius:1%;
+    overflow:hidden;
+}
 
+#slide
+{
+
+    width:5000px;
+    height:500px;
+    transition:all 500ms ease;
+    
+}
+
+#slide ul
+{
+    
+    margin-top:0px;
+    padding:0;
+    display: flex;
+}
+
+#slide li{
+    
+    list-style: none;
+    width:500px;
+    height:500px;
+}
+
+.boubou
+{
+
+    position: absolute;
+    height:500px;
+    width:50px;
+    background-color:rgba(255,255,255,0.2);
+    z-index:99;
+    transition:all 200ms ease;
+}
+
+.boubou:hover
+{
+    background-color:rgba(255,255,255,0.7);
+    cursor: pointer;
+}
+
+#right
+{    
+    
+    margin-left:950px;
+    top:0;
+}
+img{
+    height:500px;
+}
+
+.barre
+{
+    display:flex;
+    position:absolute;
+    top:650px;
+    width:1000px;
+    height:10px;
+    border-radius:15px;
+}
+#barre_droite
+
+{
+    
+    width:0;
+    height:10px;
+    background-color:#f39c12;
+    border-radius: 15px;
+    transition:all 500ms ease;
+}
 
 /*Média query*/
 @media (max-width:1800px)

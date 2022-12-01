@@ -5,7 +5,7 @@ var ban=document.getElementById("ban");
 var ev=document.getElementById("eveil");
 var deli=document.getElementById("deli");
 var parcours =document.getElementById("parcours")
-
+var apprendre=document.getElementById('apprendre')
 
   
 
@@ -13,6 +13,10 @@ window.onscroll = function (event)
 {
 
     var scroll=window.pageYOffset;
+    pos_app=apprendre.getBoundingClientRect()
+    console.log('apprendre est à : '+pos_app.y)    
+
+
 
     if(scroll<1000){
    
@@ -21,16 +25,18 @@ window.onscroll = function (event)
 
 }
 
-    else if(scroll >=1000 && scroll <3000)
+    else if(scroll >=1000 && scroll <3300)
     {
        
         ban.style.backgroundColor='#f39c12'
+        deli.style.backgroundColor="#f39c12"
 
     }
 
-    else if(scroll>=3000 && scroll < 3600)
+    else if(scroll>=3300 && scroll < 3600)
     {
         ban.style.backgroundColor='#22b9a1'
+        deli.style.backgroundColor='#22b9a1'
     }
 
     else{
@@ -48,7 +54,6 @@ window.addEventListener('scroll',()=>
     console.log(pos.y)
     var taille= 200;
     taille += -pos.y ;
-    console.log('taille du bouzin : '+taille)
     deli.style.height =taille + 'px'
 
     
@@ -63,6 +68,7 @@ window.addEventListener('scroll',()=>
         parcours.style.color='#fff'
     
     }
+
     else {
 
         ev.style.backgroundColor="#fff"

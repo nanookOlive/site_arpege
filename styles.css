@@ -16,10 +16,10 @@ html{
     height:100px;
     left:50%;
     transform:translateX(-50%);
-    transition: all 100ms ease;
-    background-color:white;
-    border:1px solid black;
-    top:1650px;
+    transition: all 200ms ease;
+    background-color:#f39c12;
+   /* border:1px solid black;*/
+    top:1700px;
     border-radius: 15px;
 }
 
@@ -183,6 +183,7 @@ nav ul{
     margin-bottom: 150px;
     margin-top: 100px;
     margin-left:150px;
+    display: flex;
 }
 #decouvrir
 {
@@ -192,6 +193,18 @@ nav ul{
     display: flex;
     flex-direction: column;
    
+}
+#rond_dec{
+
+    
+    width:70px;
+    height:70px;
+    background-color:#f39c12;
+    margin-left:20px;
+    border-radius:50%;
+    margin-top:70px;
+
+
 }
 .bloc_text{
 
@@ -313,10 +326,20 @@ nav ul{
     transform:translateY(0);
     transition:1s cubic-bezier(.5,0,0,1);
 }
+
+
+/*SLIDER*/
+
+.slider{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:400px;
+    
+}
 .mamaDiv
 {
-    margin-top:100px;
-    position: absolute;
+    
     width:1000px;
     height:500px;
     border-radius:1%;
@@ -368,7 +391,7 @@ nav ul{
 {    
     
     margin-left:950px;
-    top:0;
+    margin-top:-500px;
 }
 img{
     height:500px;
@@ -377,11 +400,12 @@ img{
 .barre
 {
     display:flex;
-    position:absolute;
     top:650px;
     width:1000px;
     height:10px;
     border-radius:15px;
+    margin-top:40px;
+    
 }
 #barre_droite
 

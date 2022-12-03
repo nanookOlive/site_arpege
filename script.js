@@ -55,6 +55,7 @@ window.addEventListener('scroll',()=>
     var taille= 200;
     taille += -pos.y ;
     deli.style.height =taille + 'px'
+    console.log("taille du deli 1 : "+taille)
 
     
     if(taille > 300 && taille < 1000)

@@ -1,10 +1,4 @@
-attention le translate augemente la width d'autant
-passer la ban en fixed z-index a résolu les problème des liens qui ne marchait plus
-chaque intitulé doit être souligné en blanc au survol sauf le premier qui doit déjà être souligné 
-implémenter le le formulaire de contact
-mettre en place le script pour détérminer la place des éléments
-texte de présentation qui monte et devient opaque
-
-
-
-animation des boutons en 
+attention le timplémenter le le formulaire de contact
+mettre en place le délimiteur qui descend pour la partie apprendre
+virer le logo
+problème slider : les images mettent du temps à charger 

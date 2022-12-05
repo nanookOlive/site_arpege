@@ -25,6 +25,16 @@ html{
     top:1700px;
     border-radius: 15px;
 }
+#deli2
+{
+    position:absolute;
+    width:10px;
+    height:0px;
+    background-color:#f39c12;
+    left:42%;
+    transition:all 200ms ease;
+    top:2500px;
+}
 
 #bloc_deli{
     width:80%;

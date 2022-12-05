@@ -5,6 +5,7 @@ var ban=document.getElementById("ban");
 var ev=document.getElementById("eveil");
 var deli=document.getElementById("deli");
 var deli2=document.getElementById("deli2")
+var deli3=document.getElementById('deli3')
 var parcours =document.getElementById("parcours")
 var apprendre=document.getElementById('apprendre')
 
@@ -58,15 +59,20 @@ window.addEventListener('scroll',()=>
 
     console.log('taille :'+taille)
     if(taille <750)
-    {deli.style.height =taille + 'px'
+    {deli.style.height =(taille-200) + 'px'
     }
 
     else if(taille>293 && taille <1500 )
     {
         deli2.style.height = `${taille-750}px`
     }
+    else if (taille >2000)
+    {
+        deli3.style.height = (taille-2000) + 'px'
+        
+    }
     
-    if(taille > 250 && taille < 1100)
+    if(taille >460 && taille < 1100)
     {
         ev.style.backgroundColor="#f39c12"
         ev.style.color="#fff"}

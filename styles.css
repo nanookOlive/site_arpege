@@ -16,7 +16,7 @@ html{
 {
     position :absolute;
     width:10px;
-    height:100px;
+    height:0;
     left:57%;
     transform:translateX(-0%);
     transition: all 200ms ease;
@@ -34,6 +34,17 @@ html{
     left:42%;
     transition:all 200ms ease;
     top:2500px;
+    border-radius:15px;
+}
+#deli3
+{
+    position:absolute;
+    width:10px;
+    height:100px;
+    top:3700px;
+    left:61%;
+    background-color: #22b9a1;
+    transition:all 200ms ease;
 }
 
 #bloc_deli{
@@ -63,7 +74,7 @@ html{
 
 .presentation{
 
-    width:100%;
+    width:90%;
     height:800px;
     display:flex;
     justify-content: space-around;
@@ -82,17 +93,17 @@ html{
 
 #arpege h1{
     margin:0;
-    font-size:250px;
+    font-size:210px;
     padding-top:80px;
     text-shadow:5px 5px 10px black;
 }
 #arpege h2{
-    font-size:100px;
+    font-size:80px;
     margin:0;
     padding-top:20px;
 }
 #arpege h3{
-    font-size:80px;
+    font-size:70px;
     padding-top:30px;
     margin:0;
 }
@@ -226,7 +237,6 @@ nav ul{
 
     margin-left:150px;
     margin-right:50px;
-    overflow:scroll;
     
 }
 #eveil
@@ -284,7 +294,7 @@ nav ul{
 
 
 /*FIN DECOUVRIR*/
-
+/*APPRENDRE*/
 #apprendre
 {
     width:100%;
@@ -299,6 +309,18 @@ nav ul{
     margin-bottom: 100px;
     margin-top: 100px;
     margin-left:80px;
+    display:flex
+}
+
+#rond_app
+{
+    width:70px;
+    height:70px;
+    background-color: #22b9a1;
+    border-radius:50%;
+    margin-top:70px;
+    margin-left :29px;
+
 }
 #ap
 
@@ -326,10 +348,22 @@ nav ul{
 
     font-size:xx-large;
     background-color: #22b9a1;
-    margin-top: 250px;
+    margin-top: 150px;
     height:600px;
     padding-right:50px;
     padding-left: 50px;
+}
+#ap .bloc_text::before
+{
+    content:'';
+    width:50px;
+    height:50px;
+    position:absolute;
+    background-color:#22b9a1;
+    top:150px;
+    display:inline block;
+    transform: translateX(-132px);
+    border-radius:50%;
 }
 
 .reveal{

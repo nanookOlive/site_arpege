@@ -16,6 +16,99 @@ html{
 
     background-color: red;
 }
+.post
+{
+    position:fixed;
+    width:450px;
+    height:450px;
+    background-color:#034963;
+    top:40vh;
+    left:-450px;
+    transition:all 500ms ease;
+    color:#fff;
+    z-index:99;
+   
+}
+
+
+
+.post::after
+{
+    content:"contact";
+    color:#ffff;
+    display: flex;
+    align-items: center;
+    justify-content:right;
+    position:absolute;
+    background-color:#034963;
+    height:50px;
+    width:80px;
+    top:400px;
+    padding-right:5px;
+    right:-70px;
+    text-align: center;  
+    border-radius: 10px;
+}
+
+.post:hover{
+
+    left:0;
+
+
+}
+
+#formu
+{
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    width:80%;
+    padding-left:10px;
+    top:50px;
+    
+}
+#nom{
+
+    width: 50%;
+}
+#prenom
+{
+    width:50%;
+    
+}
+.lab
+{
+    margin-top:10px;
+}
+#bou
+{
+    position:absolute;
+    width:100px;
+    height:50px;
+    border-radius:50px;
+    border-style: none;
+    top:300Px;
+    left:175px;
+    cursor: pointer;
+    transition:all 0.3s ease;
+    color:#FFFF;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%); 
+}
+
+#bou:hover{
+
+
+    box-shadow: 0px 0px 50px 5px white;
+}
+
+
+textarea
+{
+    margin-top:10px;
+    
+}
+
 #deli
 {
     position :absolute;
@@ -255,7 +348,7 @@ nav ul{
 {
 
     box-shadow: 5px 5px 5px 0px black;
-    height:600px;
+    height:500px;
     margin-top:-100px;
     margin-left:-150px;
     

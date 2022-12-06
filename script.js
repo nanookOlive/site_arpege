@@ -2,43 +2,52 @@
 var bou=document.getElementsByTagName('body')[0];
 bou.style.backgroundColor='#fff';
 var ban=document.getElementById("ban");
-var ev=document.getElementById("eveil");
-var deli=document.getElementById("deli");
-var deli2=document.getElementById("deli2")
-var deli3=document.getElementById('deli3')
+var eveil=document.getElementById("eveil");
 var parcours =document.getElementById("parcours")
 var apprendre=document.getElementById('apprendre')
-
+var decouvrir=document.getElementById("decouvrir")
   
 
 window.onscroll = function (event)
 {
 
     var scroll=window.pageYOffset;
+    pos_decouvrir=decouvrir.getBoundingClientRect()
     pos_app=apprendre.getBoundingClientRect()
-    console.log('apprendre est à : '+pos_app.y)    
+    console.log('scroll ' + scroll)
+    console.log('apprendre est à : '+pos_app.y +' px du top')    
+    console.log('découvrir est à : '+pos_decouvrir.y +' px du top')
 
 
 
-    if(scroll<1000){
+    if(scroll<=1100){
    
     ban.style.backgroundColor='#22b9a1'
 
 
 }
 
-    else if(scroll >=1000 && scroll <3300)
+    else if(scroll >=1100 && scroll <3300)
     {
        
         ban.style.backgroundColor='#f39c12'
-        deli.style.backgroundColor="#f39c12"
 
+        if(scroll >=1300 && scroll <1900)
+    {
+        eveil.style.backgroundColor='#f39c12'
+        eveil.style.color="#fff"
     }
+        else if(scroll >1900){
+            parcours.style.backgroundColor='#f39c12'
+            parcours.style.color='#fff'
+        }
+        else{eveil.backgroundColor="#fff"}
+    }
+    
 
     else if(scroll>=3300 && scroll < 3600)
     {
         ban.style.backgroundColor='#22b9a1'
-        deli.style.backgroundColor='#22b9a1'
     }
 
     else{
@@ -47,52 +56,7 @@ window.onscroll = function (event)
     }
 }
 
-/*agrandissement barre de défilement verticale au scroll*/ 
-window.addEventListener('scroll',()=>
-{
-    
-    let dec =document.querySelector("#decouvrir")
-    let pos = dec.getBoundingClientRect()
-    console.log(pos.y)
-    var taille= 200;
-    taille += -pos.y ;
 
-    console.log('taille :'+taille)
-    if(taille <750)
-    {deli.style.height =(taille-200) + 'px'
-    }
-
-    else if(taille>293 && taille <1500 )
-    {
-        deli2.style.height = `${taille-750}px`
-    }
-    else if (taille >2000)
-    {
-        deli3.style.height = (taille-2000) + 'px'
-        
-    }
-    
-    if(taille >460 && taille < 1100)
-    {
-        ev.style.backgroundColor="#f39c12"
-        ev.style.color="#fff"}
-    
-
-    else if(taille >1200 && taille < 2000)
-        {parcours.style.backgroundColor='#f39c12'
-        parcours.style.color='#fff'
-    
-    }
-
-    else {
-
-        ev.style.backgroundColor="#fff"
-        ev.style.color="black"
-        parcours.style.backgroundColor='#fff'
-        parcours.style.color='black'
-
-    }
-})  
 /*animation des blocs text au scroll*/
 const ratio= .1;
 const options={

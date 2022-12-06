@@ -287,6 +287,23 @@ nav ul{
 
     margin-left:150px;
     margin-right:50px;
+    display: flex;
+    flex-direction: column;
+
+    
+    
+}
+.plus{
+
+    text-decoration: none;
+    text-align: center;
+    color:#fff;
+    border:2px solid #fff;
+    border-radius:15px;
+    width:130px;
+    height: 30px;
+    align-self: center;
+    padding-top:10px;
     
 }
 #eveil
@@ -294,14 +311,14 @@ nav ul{
     display:flex;
     height:600px;
     width:90%;
-    transition: all 1s ease;
+    transition: all 2s ease;
     align-self: flex-end;
 }
 
 #eveil img
 {
 
-    box-shadow: 5px 5px 5px 0px black;
+    box-shadow: -3px 3px 5px 0px black;
     height:500px;
     margin-top:-100px;
     margin-left:-150px;
@@ -326,7 +343,7 @@ nav ul{
 
     margin-top:-100px;
     height:600px;
-    box-shadow: -5px 5px 5px 0px black;
+    box-shadow: 3px 3px 5px 0px black;
     margin-right: -300px;
     
     
@@ -344,57 +361,60 @@ nav ul{
 
 
 /*FIN DECOUVRIR*/
+
+
 /*APPRENDRE*/
 #apprendre
 {
     width:100%;
     height:2000px;
-    display: flex;
-    flex-direction: column;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    
 }
 
 .titre_app
 {
     font-size: 150px;
-    margin-bottom: 100px;
     margin-top: 100px;
-    margin-left:80px;
-    display:flex
 }
 
 
 #ap
 
 {
+    margin-top: 400px;
     display: flex;
+    flex-direction: column;
     width:100%;
-    height:600px;
+    height:800px;
+    background-color:#22b9a1;
+    align-items: center;
 }
 #ap img
 {
-   margin-left:50px;
-   height: 600px;
+    margin-top:-150px;
+    width:1000px;
 }
 
-.plus{
 
-    text-decoration: none;
-    color:black;
-    border:2px solid black;
-    border-radius:15px;
-    padding: 10px ;
-}
 #ap .bloc_text
 {
 
     font-size:xx-large;
-    background-color: #22b9a1;
     margin-top: 150px;
     height:600px;
     padding-right:50px;
     padding-left: 50px;
+    color:white;
+    
 }
-
+#ap .plus
+{
+    width:300px;
+    height:50px
+}
 
 .reveal{
 

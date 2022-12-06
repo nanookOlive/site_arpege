@@ -12,10 +12,7 @@ html{
     scroll-behavior: smooth;
 
 }
-.red{
-
-    background-color: red;
-}
+/*FORMULAIRE CONTACT*/
 .post
 {
     position:fixed;
@@ -109,39 +106,7 @@ textarea
     
 }
 
-#deli
-{
-    position :absolute;
-    width:10px;
-    height:0;
-    left:57%;;
-    transition: all 200ms ease;
-    background-color:#f39c12;
-   /* border:1px solid black;*/
-    top:1700px;
-    border-radius: 15px;
-}
-#deli2
-{
-    position:absolute;
-    width:10px;
-    height:0px;
-    background-color:#f39c12;
-    left:42%;
-    transition:all 200ms ease;
-    top:2500px;
-    border-radius:15px;
-}
-#deli3
-{
-    position:absolute;
-    width:10px;
-    height:100px;
-    top:3700px;
-    left:61%;
-    background-color: #22b9a1;
-    transition:all 200ms ease;
-}
+/*FIN FORMULAIRE CONTACT*/
 
 #bloc_deli{
     width:80%;
@@ -317,18 +282,7 @@ nav ul{
     flex-direction: column;
    
 }
-#rond_dec{
 
-    
-    width:70px;
-    height:70px;
-    background-color:#f39c12;
-    margin-left:120px;
-    border-radius:50%;
-    margin-top:70px;
-
-
-}
 .bloc_text{
 
     margin-left:150px;
@@ -408,16 +362,7 @@ nav ul{
     display:flex
 }
 
-#rond_app
-{
-    width:70px;
-    height:70px;
-    background-color: #22b9a1;
-    border-radius:50%;
-    margin-top:70px;
-    margin-left :29px;
 
-}
 #ap
 
 {
@@ -449,18 +394,7 @@ nav ul{
     padding-right:50px;
     padding-left: 50px;
 }
-#ap .bloc_text::before
-{
-    content:'';
-    width:50px;
-    height:50px;
-    position:absolute;
-    background-color:#22b9a1;
-    top:150px;
-    display:inline block;
-    transform: translateX(-132px);
-    border-radius:50%;
-}
+
 
 .reveal{
 

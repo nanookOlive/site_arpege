@@ -2,6 +2,8 @@
 <html>
 
     <head>
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
         <meta charset='utf-8'>
         <script src="https://kit.fontawesome.com/bc262ec0cf.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -123,40 +125,47 @@ ipsum Lorem ipsum dolor sit amet ceprehenderit, perferendis laudantium dolores i
 
             
         </div>
-        <div class="slider">
-            <h2>Choisir son instrument</h2>
-            <div class="mamaDiv">
-    
-                <button class='boubou' id='left'><i class="fa-solid fa-circle-arrow-left"></i></button>
-    
-                <div id="slide">
-    
-                    <ul>
-                        <li><a href="#"><img src='./piano.png' class="slidou"></a></li>
-                        <li><a href="#"><img src='./chant.png' class="slidou"></a></li>
-                        <li><a href="#"><img src='./flute.png' class="slidou"></a></li>
-                        <li><a href="#"><img src='./guitare.png' class="slidou"></a></li>
-                        <li><a href="#"><img src='./mao.png' class="slidou"></a></li>
-                        <li><a href="#"><img src='./violon.png' class="slidou"></a></li>
-                        <li><a href="#"><img src='./harpe.png' classstat="slidou"></a></li>
-                    </ul>
-                    
+        <div id="slider">
+         <div class="mamaDiv">
+            <button class='boubou' id='left'></button>
+
+
+            <div id="slide">
+
+
+                <ul>
+                    <li><img src='./piano.png'></li>
+                    <li><img src='./chant.png'></li>
+                    <li><img src='./flute.png'></li>
+                    <li><img src='./guitare.png'></li>
+                    <li><img src='./mao.png'></li>
+                    <li><img src='./violon.png'></li>
+                    <li><img src='./harpe.png'></li>
+                </ul>
+                <div class="barre">
+                    <div id="barre_droite"></div>
                 </div>
-    
-                <button class='boubou' id='right'><i class="fa-solid fa-circle-arrow-right"></i></button>
-    
-               
             </div>
 
-            <div class="barre">
-                <div id="barre_droite"></div>
-            </div>
-    </div>
-        
+            <button class='boubou' id='right'></button>
 
+        </div>
+        <div id="piano" class="texte"><div class='titre_cat'>Piano</div> ipsum Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, fugiat illum recusandae similique accusantium aliquam, sunt optio officia, voluptatem sint cupiditate quos error numquam exercitationem saepe natus aut magni pariatur.</div>
+        <div id="chant" class="texte"><div class='titre_cat'>Chant</div> ipsum Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, fugiat illum recusandae similique accusantium aliquam, sunt optio officia, voluptatem sint cupiditate quos error numquam exercitationem saepe natus aut magni pariatur.</div>
+        <div id="flute" class="texte"><div class='titre_cat'>Flute</div> ipsum Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, fugiat illum recusandae similique accusantium aliquam, sunt optio officia, voluptatem sint cupiditate quos error numquam exercitationem saepe natus aut magni pariatur.</div>
+        <div id="guitare" class="texte"><div class='titre_cat'>Guitare</div> ipsum Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, fugiat illum recusandae similique accusantium aliquam, sunt optio officia, voluptatem sint cupiditate quos error numquam exercitationem saepe natus aut magni pariatur.</div>
+        <div id="mao" class="texte"><div class='titre_cat'>M.A.O</div> ipsum Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, fugiat illum recusandae similique accusantium aliquam, sunt optio officia, voluptatem sint cupiditate quos error numquam exercitationem saepe natus aut magni pariatur.</div>
+        <div id="violon" class="texte"><div class='titre_cat'>Violon</div> ipsum Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, fugiat illum recusandae similique accusantium aliquam, sunt optio officia, voluptatem sint cupiditate quos error numquam exercitationem saepe natus aut magni pariatur.</div>
+
+
+
+      
+
+        </div>
        <div id="jouer">
             <div class='titre_jouer'>Jouer</div>
             <img src="./jouer.png">
+            
             <div id="ateliers"></div>
        </div>
 

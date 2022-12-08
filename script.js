@@ -87,6 +87,13 @@ const right=document.getElementById("right")
 const left=document.getElementById("left")
 const sli=document.getElementById('slide')
 const barre_droite=document.getElementById("barre_droite");
+const chant =document.getElementById("chant")
+const piano=document.getElementById('piano')
+const flute=document.getElementById('flute')
+const guitare=document.getElementById('guitare')
+const mao=document.getElementById('mao')
+const violon=document.getElementById('violon')
+
 var margePlus=0;
 var flag=0;
 
@@ -100,6 +107,9 @@ left.addEventListener('click', ()=>{
     barre_droite.style.width=(flag * (100/5))+'%';
 
     }
+    console.log(flag)
+    backChange(flag)
+    
 })
 
 right.addEventListener('click', ()=>{
@@ -111,4 +121,36 @@ right.addEventListener('click', ()=>{
     barre_droite.style.width=(flag *(100/5))+'%';
 
     }
+    console.log(flag)
+
+    backChange(flag)    
 })
+
+console.log(flag)
+
+function backChange(number){
+
+    $(".texte").css("display","none");
+
+    switch(true)
+    {
+        case number === 0:
+            piano.style.display='block'
+            break
+        case number === 1:
+            chant.style.display="block"
+            break
+        case number === 2:
+            flute.style.display='block'
+            break
+        case number === 3:
+            guitare.style.display='block'
+            break
+        case number === 4:
+            mao.style.display='block'
+            break
+        case number === 5:
+            violon.style.display='block'
+
+    }
+}

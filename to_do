@@ -1,13 +1,19 @@
+
+SLIDER :
 changer icone fleche slider
 problème slider : les images mettent du temps à charger
-slider trop grand associer à un bloc text ; selon l'instrument affiche le texte change
-background bloc idem background icon
+positionner bouton et barre de défilement selon mamaDiv
+mettre titre "choisir son instrument" au dessus de texte
+
 effet trame photo jouer
-div petit bloc atelier 
+implémenter les  ateliers
+mettre citations au centre des blocs ateliers 
+
+ 
 règler les vitesses bloc texte et background 
 titre jouer à droite
 vitesse background parcours pas la même que eveil
 faire footer
-mettre citations au centre des miniatures atelier
+
 
 

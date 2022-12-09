@@ -183,3 +183,51 @@ function changeImg(){
 window.setInterval(function(){
     changeImg()
 },4000);
+
+/*petit bloc*/
+
+var chambre=document.getElementById('chambre')
+var rock=document.getElementById('rock')
+var trad=document.getElementById('trad')
+var choeur=document.getElementById("choeur")
+
+    chambre.addEventListener('click',()=>
+    {
+        chambre.classList.toggle('change')
+        rock.classList.remove("change")
+        choeur.classList.remove("change")
+        trad.classList.remove('change')
+
+    })
+
+
+
+    rock.addEventListener('click',()=>
+    {
+        rock.classList.toggle('change')
+        chambre.classList.remove('change')
+        trad.classList.remove("change")
+        choeur.classList.remove("change")
+
+    })
+
+    trad.addEventListener('click',()=>
+    {
+        trad.classList.toggle('change')
+        chambre.classList.remove('change')
+        rock.classList.remove("change")
+        choeur.classList.remove("change")
+
+    })
+
+    choeur.addEventListener('click',()=>
+    {
+        choeur.classList.toggle('change')
+        chambre.classList.remove('change')
+        trad.classList.remove("change")
+        rock.classList.remove("change")
+
+    })
+
+
+    

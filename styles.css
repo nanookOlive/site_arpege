@@ -590,13 +590,20 @@ nav ul{
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
 .titre_jouer{
 
     margin-top:100px;
+    font-size: 150px;
+    margin-bottom:50px;
 }
-
+#texte_jouer
+{
+    margin-top:300px;
+    font-size: xx-large;
+}
 /*CAROU*/
 
 #car{
@@ -605,6 +612,73 @@ nav ul{
     width: 80%;
     height:600px;
 }
+
+
+
+/*petit bloc atelier*/
+
+
+#ateliers
+{
+    display: flex;
+    margin-top:200px;
+}
+
+#section_1, #section_2
+{
+    
+    margin:10px;
+    height: 50%;
+}
+#section_1
+{
+    display: flex;
+    margin-bottom:100Px;
+}
+#section_2
+{
+    display:flex;
+}
+.petit_bloc
+{
+    width:400px;
+    margin:10px;
+    display: flex;
+    flex-direction: column;
+    height: 280px;
+    border:2px solid black;
+    transition: all 500ms ease;
+    overflow: hidden;
+    color:#000;
+    background-color: #fff;
+}
+
+.texte_atelier{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:-20px;
+    margin-left:10px;
+}
+.texte_atelier h2{
+
+    margin-top: 30px;
+}
+.change{
+
+    height:400px;
+    
+}
+
+.petit_bloc img{
+    height:200px;
+}
+
+
+
+
+
 /*Média query*/
 @media (max-width:1800px)
 {

@@ -154,3 +154,32 @@ function backChange(number){
 
     }
 }
+
+/*CAROU*/
+
+var i= 0;
+var images=['jouer_1.png','jouer_2.png','jouer_3.png'];
+var ti= 2000;
+
+
+
+function changeImg(){
+
+    document.carou.src=images[i];
+    console.log(i)
+    
+    if(i < images.length-1)
+    {
+        i ++;
+    } 
+    else{
+        i=0;
+    }
+
+    setTimeout("changeImg",ti);
+   
+}
+
+window.setInterval(function(){
+    changeImg()
+},4000);

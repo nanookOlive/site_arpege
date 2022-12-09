@@ -442,7 +442,7 @@ nav ul{
 }
 .mamaDiv
 {
-    
+    position:relative;
     margin-top:100px;
     width:500px;
     height:500px;
@@ -477,13 +477,14 @@ nav ul{
 .boubou
 {
 
+    position:absolute;
     height:50px;
     width:50px;
     background-color:rgba(255,255,255,0.2);
-    z-index:99;
+    z-index:98;
     transition:all 300ms ease;
     border-radius:50%;
-    top:250px;
+    top:445px;
 
 }
 
@@ -495,34 +496,39 @@ nav ul{
 
 #right
 {    
-    position:absolute;
-    top:5600px;
-    left:775px;
-
+    left:445px;
 }
+#left{
 
-#left
-{
-    position: absolute;
-    top:5600px;
-    left:350px;
+    left:5px;
 }
 
 #slide img{
+    height:500px;
+}
+#petitCont
+{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    margin-left:100px;
     height:500px;
 }
 .texte
 {
     display: none;
     width:500px;
-    height:200px;
-    right:500px;
+    height:50%;
     padding:20px;
-    margin-top: 250px;
-    margin-left:150px;
     color:#fff;
 }
-
+#titre_choisir
+{
+    font-size: xx-large;
+    height:50%;
+    margin-top:25%;;
+}
 #piano
 {
     display: block;
@@ -581,14 +587,23 @@ nav ul{
 
     width:100%;
     margin-top:300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-#jouer img{
 
-    width:100%;
-}
 .titre_jouer{
 
     margin-top:100px;
+}
+
+/*CAROU*/
+
+#car{
+
+    
+    width: 80%;
+    height:600px;
 }
 /*Média query*/
 @media (max-width:1800px)

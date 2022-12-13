@@ -527,7 +527,6 @@ nav ul{
 {
     font-size: xx-large;
     height:50%;
-    margin-top:25%;;
 }
 #piano
 {
@@ -597,7 +596,7 @@ nav ul{
 
     margin-top:100px;
     font-size: 150px;
-    margin-bottom:50px;
+    margin-bottom:100px;
 }
 #texte_jouer
 {
@@ -621,6 +620,7 @@ nav ul{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin-top:2em;
     font-size:6em;
+    text-align: justify;
     }
 .auteur
 {
@@ -664,8 +664,8 @@ nav ul{
     background-color: #fff;
     font-size:20px;
     cursor: pointer;
-    border-left:5px solid #00b7dd;
-    border-bottom: 5px solid #00b7dd;
+    border-left:5px solid #324558;
+    border-bottom: 5px solid #324558;
 
 }
 
@@ -685,7 +685,7 @@ nav ul{
 }
 .petit_bloc:hover h2{
 
-    border-bottom: 5px solid #034963;
+    border-bottom: 5px solid #324548;
 }
 .change{
 

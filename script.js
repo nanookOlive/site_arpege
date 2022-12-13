@@ -52,7 +52,7 @@ window.onscroll = function (event)
 
     else if(scroll >=5900 ){
 
-        ban.style.backgroundColor='#00b7dd'
+        ban.style.backgroundColor='#324558'
     }
     else{
 

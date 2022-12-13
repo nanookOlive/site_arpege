@@ -6,7 +6,7 @@ var eveil=document.getElementById("eveil");
 var parcours =document.getElementById("parcours")
 var apprendre=document.getElementById('apprendre')
 var decouvrir=document.getElementById("decouvrir")
-  
+var jouer =document.getElementById("jouer")
 
 window.onscroll = function (event)
 {
@@ -14,11 +14,11 @@ window.onscroll = function (event)
     var scroll=window.pageYOffset;
     pos_decouvrir=decouvrir.getBoundingClientRect()
     pos_app=apprendre.getBoundingClientRect()
+    pos_jouer=jouer.getBoundingClientRect()
     console.log('scroll ' + scroll)
     console.log('apprendre est à : '+pos_app.y +' px du top')    
     console.log('découvrir est à : '+pos_decouvrir.y +' px du top')
-
-
+    console.log('jouer est à : '+pos_jouer.y+' px.')
 
     if(scroll<=1100){
    
@@ -45,11 +45,15 @@ window.onscroll = function (event)
     }
     
 
-    else if(scroll>=3300 && scroll < 3600)
+    else if(scroll>=3300 && scroll < 5900)
     {
         ban.style.backgroundColor='#22b9a1'
     }
 
+    else if(scroll >=5900 ){
+
+        ban.style.backgroundColor='#00b7dd'
+    }
     else{
 
         bou.style.backgroundColor='#fff';

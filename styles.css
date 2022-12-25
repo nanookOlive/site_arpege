@@ -272,7 +272,7 @@ nav ul{
     font-size: 150px;
     margin-bottom: 150px;
     margin-top: 100px;
-    display: flex;
+    align-self:flex-start;
 }
 #decouvrir
 {
@@ -312,7 +312,7 @@ nav ul{
     display:flex;
     height:600px;
     width:90%;
-    transition: all 2s ease;
+    transition: all 1s ease;
     align-self: flex-end;
 }
 
@@ -325,7 +325,8 @@ nav ul{
     margin-left:-150px;
     
 }
-
+#eveil .bloc_text{overflow:scroll;
+scrollbar-width: none;}
 #eveil p
 {
     font-size: xx-large;
@@ -353,6 +354,7 @@ nav ul{
 {
     margin-left:50px;
     padding-right: 50px;
+    overflow: scroll;
 }
 #parcours p
 {
@@ -584,7 +586,7 @@ nav ul{
 /*JOUER */
 #jouer{
 
-    width:100%;
+    width:80%;
     margin-top:300px;
     display: flex;
     flex-direction: column;
@@ -597,6 +599,7 @@ nav ul{
     margin-top:100px;
     font-size: 150px;
     margin-bottom:100px;
+    align-self: flex-end;
 }
 #texte_jouer
 {
@@ -608,7 +611,7 @@ nav ul{
 #car{
 
     
-    width: 80%;
+    width: 100%;
     height:600px;
 }
 
@@ -714,16 +717,61 @@ nav ul{
 
     #arpege h1
     {
-        font-size:100px;
+        font-size:12em;
     }
+
 
     #image_vec
     {
         display:none;
     }
+
+    .titre_ap, .titre_jouer, .titre_dec
+    {
+        align-self: center;
+    }
     #car
     {
         display:none;
+    }
+    #arpege h2{
+        font-size:40px;
+    }
+    #arpege h3{
+        font-size:40px;
+    }
+    #arpege{
+        align-items: center;
+    }
+    #ateliers{
+        flex-direction: column;
+    }
+
+    #eveil{
+
+        flex-direction: column;
+        align-items: center;
+        
+
+    }
+    #eveil img{
+        margin-left:0px;
+        box-shadow: none;   
+        width:500Px;   
+    }
+    .bloc_text{
+        align-items:center;
+        overflow: scroll;
+        padding-bottom: 10Px;;
+    }
+    .texte_pre{
+
+        margin-top:50px;
+    }
+
+    #arpege{
+
+        margin-top:200px
     }
 }    
 

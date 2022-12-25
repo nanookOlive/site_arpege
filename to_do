@@ -2,7 +2,7 @@
 SLIDER :
 changer icone fleche slider
 problème slider : les images mettent du temps à charger
-flêches au milieu ou en bas ?
+
 
 règler les vitesses bloc texte et background 
 titre jouer à droite
@@ -10,4 +10,10 @@ vitesse background parcours pas la même que eveil
 faire footer
 
 
+reveal ne marche plus quand screen < media 1
 
+faire hamburger menu 
+attention taille titre bloc text
+
+prb menu choisir son instru
+prb petit bloc text 

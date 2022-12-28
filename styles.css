@@ -126,6 +126,57 @@ textarea
     
 
 }
+/*-------HAMBURGER-----------------------*/
+
+.hamburger{
+
+    position:absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left:0;
+    z-index:99;;
+    width:100px;
+    height:100%;
+    cursor:pointer;
+
+}
+
+.hamburger span{
+
+    position: absolute;
+    display:block;
+    width:80px;
+    height:5px;
+    background-color: #fff;
+    transition:all 200ms ease; 
+}
+
+.line_1{
+
+    transform:translateY(20px);
+}
+.line_3{
+    transform: translateY(-20px);
+}
+.active .line_1{
+
+    transform: translateY(0) rotate(135deg);
+}
+
+.active .line_3{
+
+    transform: translateY(0) rotate(-135deg);
+
+}
+
+
+.active .line_2
+{
+
+opacity: 0;
+}
 #logo img
 {
     margin-top:15px;
@@ -258,12 +309,7 @@ nav ul{
     text-align: center;
 }
 
-.texte_pre p{
 
-    padding:40px;
-    border-left: 5px solid #22b9a1;
-    border-bottom:5px solid #22b9a1;
-}
 
 
 /*DECOUVRIR*/
@@ -319,10 +365,10 @@ nav ul{
 #eveil img
 {
 
-    box-shadow: -3px 3px 5px 0px black;
     height:500px;
     margin-top:-100px;
     margin-left:-150px;
+    
     
 }
 #eveil .bloc_text{overflow:scroll;
@@ -345,8 +391,8 @@ scrollbar-width: none;}
 
     margin-top:-100px;
     height:600px;
-    box-shadow: 3px 3px 5px 0px black;
     margin-right: -300px;
+    border:solid 1px black;
     
     
 }
@@ -707,7 +753,14 @@ scrollbar-width: none;}
 
 @media(max-width:1800px)
 {
-    
+    #bloc_deli
+    {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
     .presentation{
         
         
@@ -751,12 +804,12 @@ scrollbar-width: none;}
 
         flex-direction: column;
         align-items: center;
+        width:100%;
         
 
     }
     #eveil img{
         margin-left:0px;
-        box-shadow: none;   
         width:500Px;   
     }
     .bloc_text{
@@ -766,7 +819,7 @@ scrollbar-width: none;}
     }
     .texte_pre{
 
-        margin-top:50px;
+        margin-top:150px;
     }
 
     #arpege{
@@ -774,4 +827,13 @@ scrollbar-width: none;}
         margin-top:200px
     }
 }    
+@media (max-width:900px){
 
+    .menu{
+
+        display:none;
+    }
+    .hamburger{
+        display: flex;
+    }
+}

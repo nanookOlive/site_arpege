@@ -20,7 +20,7 @@ window.onscroll = function (event)
     console.log('découvrir est à : '+pos_decouvrir.y +' px du top')
     console.log('jouer est à : '+pos_jouer.y+' px.')
 
-    if(scroll<=1100){
+    if(scroll<=pos_decouvrir.y){
    
     ban.style.backgroundColor='#22b9a1'
 
@@ -170,7 +170,6 @@ var ti= 2000;
 function changeImg(){
 
     document.carou.src=images[i];
-    console.log(i)
     
     if(i < images.length-1)
     {
@@ -234,4 +233,9 @@ var choeur=document.getElementById("choeur")
     })
 
 
-    
+    const hamburger = document.querySelector('.hamburger');
+
+    hamburger.addEventListener('click', ()=>{
+
+        hamburger.classList.toggle('active');
+    })

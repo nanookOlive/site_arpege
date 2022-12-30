@@ -17,22 +17,7 @@
 
     <body>
 
-        <!--Formulaire contact-->
-
-        <div class="post">
-            <form id="formu" method="get" action="">
-
-                <label class="lab" for ="nom">Nom:</label>
-                <input class="i" type="text" id="nom" name="zenom" value="">
-                <label class ="lab" for ="prenom">Mail</label>
-                <input class="i" type="text" id="prenom" name="zeprenom" value="">
-                <textarea placeholder="votre message" rows="8"></textarea>
-                <button id="bou" type="submit" name="envoie" values="1">Send</button>
-            </form>
-
-        </div>
-
-        <!--Fin formulaire-->
+        
 
         <!--HEADER-->
         <div id="ban">
@@ -47,6 +32,8 @@
                 </ul>
             </nav>
 
+            
+
             <div class="hamburger">
                 <span class="line_1"></span>
                 <span class="line_2"></span>
@@ -56,7 +43,17 @@
             <a href="#" id="logo"><img  src="./logo.png"></a>
             <a id="inscription" href="#">s'inscrire</a>  
         </div>
+        <div id="menu_2">
+            <ul>
+                <li class="dec"><a href="#decouvrir">Découvrir</a></li>
 
+                <li class="app"><a href="#apprendre">Apprendre</a></li>
+
+                <li class="jou"><a href="#jouer">Jouer</a></li>
+                <li class="conta"><a href="#formu">Contact</a></li>
+
+            </ul>
+        </div>
         
 
         <!--FIN HEADER-->
@@ -134,7 +131,7 @@ ipsum Lorem ipsum dolor sit amet ceprehenderit, perferendis laudantium dolores i
             
         </div>
 
-        <div id="slider">
+        <div class="slider">
 
          <div class="mamaDiv">
              
@@ -223,18 +220,28 @@ ipsum Lorem ipsum dolor sit amet ceprehenderit, perferendis laudantium dolores i
                         </div>
                     </div>
          </div>              
+ <!--Formulaire contact-->
+
+ <div class="post">
+    <form id="formu" method="get" action="">
+
+        <label class="lab" for ="nom">Nom:</label>
+        <input class="i" type="text" id="nom" name="zenom" value="">
+        <label class ="lab" for ="prenom">Mail</label>
+        <input class="i" type="text" id="prenom" name="zeprenom" value="">
+        <textarea placeholder="votre message" rows="8"></textarea>
+        <button id="bou" type="submit" name="envoie" values="1">Send</button>
+    </form>
 
 </div>
-    
+
+<!--Fin formulaire-->
+</div>
+   
         <script src="script.js"></script>
        
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js" integrity="sha512-tHvUcUQYi35zApvAa5TNR3fNhBQkVtkmWKfacnpxmix4/VTGz1lGjIVyLMp7gLgAvg+aKJjnVKokXJNS5GZ+/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     </body>
-    <footer>
-
-        <div class="nous_suivre">bla bla</div>
-        
-    
-        </footer>
+   
     
 </html>

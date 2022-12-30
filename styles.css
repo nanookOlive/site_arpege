@@ -214,14 +214,14 @@ opacity: 0;
 
 
 }
-nav .dec a:hover{
+.menu  .dec a:hover{
 
     border-bottom:3px solid white;
 
 }
-.jou:hover{    border-bottom:3px solid white; transition: all 100ms ease;
+.menu .jou:hover{    border-bottom:3px solid white; transition: all 100ms ease;
 }
-.app:hover{
+.menu .app:hover{
     border-top:3px solid white; transition:all 100ms ease;
 
 }
@@ -250,10 +250,51 @@ nav .dec a:hover{
 
 }
 
-nav ul{
+.menu nav ul{
     border-radius: 15px;
 }
 
+
+#menu_2
+{
+    display:none;
+    position: fixed;
+    z-index: 99;
+    top:100Px;
+    left:0px;
+    transform:translateX(-100%) ;   
+    transition:all 500ms ease;
+    width:100%;
+    height:500px;
+    background-color: #22b9a1;
+}
+#menu_2 .ul {
+
+    display:flex; 
+    flex-direction: column;
+    padding-left:0;    
+    
+}
+#menu_2.move{
+
+    transform : translateX(0);
+}
+
+#menu_2 li 
+{
+    
+    list-style: none;
+    font-size: 3rem;
+    margin-top:40px;
+    text-align: center;
+    
+}
+
+#menu_2 a{
+
+    text-decoration: none;
+    color:#fff;
+}
 /*------------------------------Titre école-----------------------------*/
 
 .presentation{
@@ -533,12 +574,13 @@ nav ul{
 
 /*------------------------------------SLIDER-----------------------------------------------*/
 
-#slider{
+.slider{
 
     display: flex;
     justify-content: center;
     width: 100%;
     margin-top:100px;
+    background-color: #f39c12;
 }
 .mamaDiv
 {
@@ -662,6 +704,7 @@ nav ul{
 {
     background-color: #00b7dd;
 }
+
 .barre
 {
     display:flex;
@@ -823,7 +866,7 @@ footer{
 
 
 /*-------------------media Q ---------------------------------*/
-@media(max-width:1800px)
+@media(max-width:1800px) 
 {
     #bloc_deli
     {
@@ -911,6 +954,7 @@ footer{
 
         display:none;
     }
+    #menu_2{display:block;}
     .hamburger{
         display: flex;
     }
@@ -1004,10 +1048,11 @@ footer{
 #apprendre {
     background-color: #22b9a1;
     height: 1198px;
+    color:#fff;
 }
 #apprendre .bloc_text p{font-size:1.5rem;}
  #apprendre img{
-    width:400Px;
+    width:400px;
 
  }
  #ateliers{
@@ -1015,19 +1060,30 @@ footer{
  }
 
  /*--------------slider-------------------*/
- #slider{
+ .slider{
     margin-top:0;
     flex-direction: column;
     align-items: center;
     background-color: #fff;
+
  }
  .mamaDiv{width:450px;
 margin-top:0px;}
- #petitCont{margin:0;width:auto;}
+ #petitCont{margin:0;width:auto;height:300px}
  #right{left:88%;}
  .texte{width:auto;}
  #titre_choisir{display:none;}
  /*jouer*/
 
+/*contact*/
 
+.post{
+    position: relative;
+    display: flex;
+    left:0;
+    width:100%;
+    Z-index:1;
+}
+.post::after
+{display:none;}
 }

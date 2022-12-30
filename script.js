@@ -19,6 +19,7 @@ window.onscroll = function (event)
     if(scroll<=pos_decouvrir.y){
    
     ban.style.backgroundColor='#22b9a1'
+    menu_2.style.backgroundColor='#22b9a1'
 
 
 }
@@ -27,6 +28,7 @@ window.onscroll = function (event)
     {
        
         ban.style.backgroundColor='#f39c12'
+        menu_2.style.backgroundColor='#f39c12'
 
         if(scroll >=1300 && scroll <1900)
     {
@@ -44,11 +46,14 @@ window.onscroll = function (event)
     else if(scroll>=3300 && scroll < 5700)
     {
         ban.style.backgroundColor='#22b9a1'
+        menu_2.style.backgroundColor='#22b9a1'
     }
 
     else if(scroll >=5700 ){
 
         ban.style.backgroundColor='#900c3f'
+        menu_2.style.backgroundColor='#900c3f'
+
     }
     else{
 
@@ -94,6 +99,7 @@ const flute=document.getElementById('flute')
 const guitare=document.getElementById('guitare')
 const mao=document.getElementById('mao')
 const violon=document.getElementById('violon')
+const slider_back=document.querySelector('.slider');
 var margePlus=0;
 var flag=0;
 
@@ -108,7 +114,6 @@ left.addEventListener('click', ()=>{
     barre_droite.style.width=(flag * (100/5))+'%';
 
     }
-
     backChange(flag)
 
     
@@ -131,28 +136,36 @@ right.addEventListener('click', ()=>{
 function backChange(number){
 
     $(".texte").css("display","none");
-
+    
     switch(true)
     {
         case number === 0:
             piano.style.display='block'
-            if(media_q.matches){console.log('renard')}
-
+            $('.slider').css("background-color","#f39c12")
             break
         case number === 1:
             chant.style.display="block"
+            $('.slider').css("background-color","#fc5454")
             break
         case number === 2:
             flute.style.display='block'
+            $('.slider').css("background-color","#324558")
+
             break
         case number === 3:
             guitare.style.display='block'
+            $('.slider').css("background-color","#034963")
+
             break
         case number === 4:
             mao.style.display='block'
+            $('.slider').css("background-color","#22B9A1")
+
             break
         case number === 5:
             violon.style.display='block'
+            $('.slider').css("background-color","#00b7dd")
+            break
 
     }
 }
@@ -237,4 +250,9 @@ var choeur=document.getElementById("choeur")
     hamburger.addEventListener('click', ()=>{
 
         hamburger.classList.toggle('active');
+        const menu_2 = document.getElementById('menu_2')
+        menu_2.classList.toggle("move")
     })
+
+
+    

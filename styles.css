@@ -10,9 +10,11 @@ body{
 }
 html{
     scroll-behavior: smooth;
+    font-size:16px;
 
 }
-/*FORMULAIRE CONTACT*/
+
+/*--------------------------FORMULAIRE CONTACT------------------------------*/
 .post
 {
     position:fixed;
@@ -106,11 +108,8 @@ textarea
     
 }
 
-/*FIN FORMULAIRE CONTACT*/
 
-#bloc_deli{
-    width:80%;
-}
+
 #ban{
 
     position:fixed;
@@ -177,6 +176,8 @@ textarea
 
 opacity: 0;
 }
+
+
 #logo img
 {
     margin-top:15px;
@@ -184,48 +185,7 @@ opacity: 0;
 }
 
 
-.presentation{
-
-    width:90%;
-    height:800px;
-    display:flex;
-    justify-content: space-around;
-
-}
-
-#arpege
-{
-    width:50%;
-    height:100%;
-    color:#22b9a1;
-    display: flex;
-    flex-direction: column;
-    margin-top:100px;
-}
-
-#arpege h1{
-    margin:0;
-    font-size:210px;
-    padding-top:80px;
-    text-shadow:5px 5px 10px black;
-}
-#arpege h2{
-    font-size:80px;
-    margin:0;
-    padding-top:20px;
-}
-#arpege h3{
-    font-size:70px;
-    padding-top:30px;
-    margin:0;
-}
-#image_vec 
-{
-    
-    margin-top :150px;
-    margin-right:50px;
-}
-/*NAV*/
+/*---------------------------------MENU-------------------------------------*/
 #ban nav li{
     list-style: none;
     margin:5px;
@@ -294,28 +254,76 @@ nav ul{
     border-radius: 15px;
 }
 
+/*------------------------------Titre école-----------------------------*/
 
-/*texte présentation */
+.presentation{
 
-.texte_pre
+    width:90%;
+    height:800px;
+    display:flex;
+
+}
+
+#arpege
 {
-    margin-top:200px;
     width:50%;
-    height:300px;
-    font-size:xx-large;
-    margin-left:25%;
-    margin-right:25%;
-    margin-bottom:200px;
-    text-align: center;
+    height:100%;
+    color:#22b9a1;
+    display: flex;
+    flex-direction: column;
+    margin-top:100px;
+}
+
+#arpege h1{
+    margin:0;
+    font-size:13rem;
+    padding-top:80px;
+    text-shadow:5px 5px 10px black;
+}
+#arpege h2{
+    font-size:5rem;
+    margin:0;
+    padding-top:20px;
+}
+#arpege h3{
+    font-size:4rem;
+    padding-top:30px;
+    margin:0;
+}
+#image_vec 
+{
+    margin-top :150px;
+    margin-right:50px;
 }
 
 
 
+/*-----------------------texte présentation ------------------------------------- */
 
-/*DECOUVRIR*/
+.texte_pre
+{
+    margin-top:300px;
+    width:50%;
+    height:300px;
+    font-size:2rem;
+    margin-left:25%;
+    margin-right:25%;
+    margin-bottom:200px;
+}
+/*-------------------corps-------------------------------*/
+#bloc_deli{
+    width:80%;
+}
+
+
+/*--------------------------DECOUVRIR--------------------------------------------*/
+
+
+
+
 .titre_dec
 {
-    font-size: 150px;
+    font-size:8rem;
     margin-bottom: 150px;
     margin-top: 100px;
     align-self:flex-start;
@@ -329,8 +337,19 @@ nav ul{
     flex-direction: column;
    
 }
+/*-------------------------sous-section éveil-----------------------------*/
 
-.bloc_text{
+
+#eveil
+{
+    display:flex;
+    height:650px;
+    width:90%;
+    transition: all 1s ease;
+    align-self: flex-end;
+}
+
+#eveil .bloc_text{
 
     margin-left:150px;
     margin-right:50px;
@@ -340,7 +359,7 @@ nav ul{
     
     
 }
-.plus{
+#eveil .plus{
 
     text-decoration: none;
     text-align: center;
@@ -353,41 +372,43 @@ nav ul{
     padding-top:10px;
     
 }
-#eveil
-{
-    display:flex;
-    height:600px;
-    width:90%;
-    transition: all 1s ease;
-    align-self: flex-end;
-}
+
 
 #eveil img
 {
 
     height:500px;
     margin-top:-100px;
+    border : solid 1px black;
     margin-left:-150px;
     
     
 }
-#eveil .bloc_text{overflow:scroll;
-scrollbar-width: none;}
+#eveil h2{
+
+    font-size: 3em;
+}
+
 #eveil p
 {
-    font-size: xx-large;
+    font-size:2em;
+    margin-top:0;
     
 }
 
+/*---------------------------sous section parcours ----------------------*/
 #parcours
 {
     display: flex;
-    height:600px;
+    height:550px;
     width:80%;
     transition:all 1s ease;
     margin-top:300px;
 }
-#parcours img{
+
+#img_parc_1{display:none;}
+
+#img_parc_2{
 
     margin-top:-100px;
     height:600px;
@@ -400,23 +421,45 @@ scrollbar-width: none;}
 {
     margin-left:50px;
     padding-right: 50px;
-    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#parcours h2{
+
+    font-size: 3em;
+    align-self: flex-start;
 }
 #parcours p
 {
   
-    font-size:xx-large;
+    font-size:2em;
+}
+#parcours .plus{
+
+   
+        text-decoration: none;
+        text-align: center;
+        color:#fff;
+        border:2px solid #fff;
+        border-radius:15px;
+        width:130px;
+        height: 30px;
+        padding-top:10px;
+        margin-top: 50px;
+        
+    
+    
 }
 
+/*-------------------------------FIN DECOUVRIR*------------------------------------------------------/
 
-/*FIN DECOUVRIR*/
 
-
-/*APPRENDRE*/
+/*-----------------------APPRENDRE---------------------------------------------------------*/
 #apprendre
 {
     width:100%;
-    height:2000px;
+    height:1300px;
     display:flex;
     flex-direction:column;
     align-items: center;
@@ -433,7 +476,7 @@ scrollbar-width: none;}
 #ap
 
 {
-    margin-top: 400px;
+    margin-top: 200px;
     display: flex;
     flex-direction: column;
     width:100%;
@@ -451,18 +494,27 @@ scrollbar-width: none;}
 #ap .bloc_text
 {
 
-    font-size:xx-large;
-    margin-top: 150px;
+    font-size:2.5em;
+    margin-top: 100px;
     height:600px;
     padding-right:50px;
     padding-left: 50px;
     color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
 }
-#ap .plus
-{
-    width:300px;
-    height:50px
+#ap .plus{
+
+    text-decoration: none;
+    text-align: center;
+    color:#fff;
+    border:2px solid #fff;
+    border-radius:15px;
+    padding:10px;
+    margin-top:50px;
+    
 }
 
 .reveal{
@@ -479,14 +531,14 @@ scrollbar-width: none;}
 }
 
 
-/*SLIDER*/
+/*------------------------------------SLIDER-----------------------------------------------*/
 
 #slider{
 
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-top:100Px;
+    margin-top:100px;
 }
 .mamaDiv
 {
@@ -566,15 +618,16 @@ scrollbar-width: none;}
 .texte
 {
     display: none;
-    width:500px;
+    width:475px;
     height:50%;
     padding:20px;
     color:#fff;
 }
 #titre_choisir
 {
-    font-size: 50px;
+    font-size: 2.5rem;
     height:50%;
+    text-align: center;
 }
 #piano
 {
@@ -629,10 +682,10 @@ scrollbar-width: none;}
     transition:all 500ms ease;
 }
 
-/*JOUER */
+/*----------------------------------------JOUER-------------------------------------------- */
 #jouer{
 
-    width:80%;
+    width:100%;
     margin-top:300px;
     display: flex;
     flex-direction: column;
@@ -645,19 +698,21 @@ scrollbar-width: none;}
     margin-top:100px;
     font-size: 150px;
     margin-bottom:100px;
-    align-self: flex-end;
 }
 #texte_jouer
 {
     margin-top:200px;
     font-size: xx-large;
+    align-self: center;
+    text-align: justify;
+    overflow-wrap: break-word;
 }
 /*CAROU*/
 
 #car{
 
     
-    width: 100%;
+    width: 80%;
     height:600px;
 }
 
@@ -665,16 +720,17 @@ scrollbar-width: none;}
 
 .citation
 {
-    width:600px;
+    width:80%;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin-top:2em;
-    font-size:6em;
-    text-align: justify;
+    font-size:4rem;
+    text-align: center;
     }
 .auteur
 {
     font-size: 30px;
     font-style: italic;
+    text-align: right;
 }
 /*petit bloc atelier*/
 
@@ -750,7 +806,23 @@ scrollbar-width: none;}
     padding-top:30px;
 }
 
+/*----------------FOOTER-----------------------------*/
 
+footer{
+
+    
+    display: flex;
+    width:100%;
+    height: 300px;
+    background-color: #900c3f;
+    color:#fff;
+}
+
+
+
+
+
+/*-------------------media Q ---------------------------------*/
 @media(max-width:1800px)
 {
     #bloc_deli
@@ -761,23 +833,21 @@ scrollbar-width: none;}
         align-items: center;
 
     }
+    
     .presentation{
-        
-        
+
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    #arpege h1
-    {
-        font-size:12em;
-    }
-
-
+    
     #image_vec
     {
         display:none;
     }
+
+    
 
     .titre_ap, .titre_jouer, .titre_dec
     {
@@ -787,15 +857,8 @@ scrollbar-width: none;}
     {
         display:none;
     }
-    #arpege h2{
-        font-size:40px;
-    }
-    #arpege h3{
-        font-size:40px;
-    }
-    #arpege{
-        align-items: center;
-    }
+    
+    
     #ateliers{
         flex-direction: column;
     }
@@ -806,6 +869,8 @@ scrollbar-width: none;}
         align-items: center;
         width:100%;
         
+        
+        
 
     }
     #eveil img{
@@ -813,9 +878,10 @@ scrollbar-width: none;}
         width:500Px;   
     }
     .bloc_text{
-        align-items:center;
-        overflow: scroll;
-        padding-bottom: 10Px;;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 10Px;
     }
     .texte_pre{
 
@@ -827,8 +893,20 @@ scrollbar-width: none;}
         margin-top:200px
     }
 }    
-@media (max-width:900px){
 
+/*------------------MINI MEDIA Q-----------------------*/
+
+
+@media (max-width : 576px){
+
+    .post
+    {
+        display: none;
+    }
+    #bloc_deli{
+
+        width:100%;
+    }
     .menu{
 
         display:none;
@@ -836,4 +914,120 @@ scrollbar-width: none;}
     .hamburger{
         display: flex;
     }
+    #inscription{
+
+        margin-right: 10px;
+    }
+    #presentation{width:100%;
+    }
+    #arpege
+    {
+        align-items: center;
+    }
+   #arpege h1{
+
+    font-size: 6rem;
+    text-shadow:2px 2px 5px black;
+
+
+   }
+   #arpege h2{
+    margin-top:30px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+   }
+   #arpege h3{margin-top:30px;font-size:2rem;font-weight:bold;text-align: center;}
+
+
+   .titre_dec, .titre_jouer, .titre_app
+   {
+    font-size: 5rem;
+   }
+.texte_pre{
+
+    width:90%;
+    
+}
+
+#decouvrir{
+
+    background-color: #f39c12;
+    color:#fff;
+}
+   #parcours{
+    flex-direction: column;
+    width:100%;
+    height:570px;
+   }
+
+   #eveil{
+
+    height:600px;
+    
+   }
+   #eveil img{
+
+    width :450px;
+    height: 300px;
+   }
+#eveil .bloc_text{
+    width:90%;
+    margin: auto;
+}
+   
+   #eveil h2{font-size: 2em;}
+  #eveil .bloc_text p{
+
+    font-size: 1.3rem;
+
+   }
+
+   #parcours .bloc_text h2{font-size: 1.8em;}
+   #parcours .bloc_text p{font-size: 1.3em;}
+   #parcours .bloc_text .plus{margin-top:10px;}
+ #img_parc_1{
+
+    display: block;
+    width:auto;
+    height:500px;
+    border:solid black 1px;
+    margin-top: -300px;
+ }
+ #img_parc_2
+ {
+    display:none;
+ }
+
+ 
+/*----------apprendre---------------*/
+#apprendre {
+    background-color: #22b9a1;
+    height: 1198px;
+}
+#apprendre .bloc_text p{font-size:1.5rem;}
+ #apprendre img{
+    width:400Px;
+
+ }
+ #ateliers{
+    display:none;
+ }
+
+ /*--------------slider-------------------*/
+ #slider{
+    margin-top:0;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+ }
+ .mamaDiv{width:450px;
+margin-top:0px;}
+ #petitCont{margin:0;width:auto;}
+ #right{left:88%;}
+ .texte{width:auto;}
+ #titre_choisir{display:none;}
+ /*jouer*/
+
+
 }

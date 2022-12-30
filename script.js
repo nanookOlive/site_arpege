@@ -15,11 +15,7 @@ window.onscroll = function (event)
     pos_decouvrir=decouvrir.getBoundingClientRect()
     pos_app=apprendre.getBoundingClientRect()
     pos_jouer=jouer.getBoundingClientRect()
-    console.log('scroll ' + scroll)
-    console.log('apprendre est à : '+pos_app.y +' px du top')    
-    console.log('découvrir est à : '+pos_decouvrir.y +' px du top')
-    console.log('jouer est à : '+pos_jouer.y+' px.')
-
+    
     if(scroll<=pos_decouvrir.y){
    
     ban.style.backgroundColor='#22b9a1'
@@ -45,12 +41,12 @@ window.onscroll = function (event)
     }
     
 
-    else if(scroll>=3300 && scroll < 5900)
+    else if(scroll>=3300 && scroll < 5700)
     {
         ban.style.backgroundColor='#22b9a1'
     }
 
-    else if(scroll >=5900 ){
+    else if(scroll >=5700 ){
 
         ban.style.backgroundColor='#900c3f'
     }
@@ -87,9 +83,10 @@ document.querySelectorAll('.reveal').forEach(function(r){
 
 /*Slider */
 
-const right=document.getElementById("right")
-const left=document.getElementById("left")
-const sli=document.getElementById('slide')
+const slider=document.getElementById('slider');
+const right=document.getElementById("right");
+const left=document.getElementById("left");
+const sli=document.getElementById('slide');
 const barre_droite=document.getElementById("barre_droite");
 const chant =document.getElementById("chant")
 const piano=document.getElementById('piano')
@@ -97,9 +94,9 @@ const flute=document.getElementById('flute')
 const guitare=document.getElementById('guitare')
 const mao=document.getElementById('mao')
 const violon=document.getElementById('violon')
-
 var margePlus=0;
 var flag=0;
+
 
 left.addEventListener('click', ()=>{
 
@@ -111,8 +108,9 @@ left.addEventListener('click', ()=>{
     barre_droite.style.width=(flag * (100/5))+'%';
 
     }
-    console.log(flag)
+
     backChange(flag)
+
     
 })
 
@@ -125,12 +123,10 @@ right.addEventListener('click', ()=>{
     barre_droite.style.width=(flag *(100/5))+'%';
 
     }
-    console.log(flag)
 
     backChange(flag)    
 })
 
-console.log(flag)
 
 function backChange(number){
 
@@ -140,6 +136,8 @@ function backChange(number){
     {
         case number === 0:
             piano.style.display='block'
+            if(media_q.matches){console.log('renard')}
+
             break
         case number === 1:
             chant.style.display="block"
@@ -178,6 +176,7 @@ function changeImg(){
     else{
         i=0;
     }
+    
 
     setTimeout("changeImg",ti);
    

@@ -334,7 +334,9 @@ opacity: 0;
 #image_vec 
 {
     margin-top :150px;
-    margin-right:50px;
+    width:100%;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -346,7 +348,7 @@ opacity: 0;
     margin-top:300px;
     width:50%;
     height:300px;
-    font-size:2rem;
+    font-size:2.5rem;
     margin-left:25%;
     margin-right:25%;
     margin-bottom:200px;
@@ -509,7 +511,7 @@ opacity: 0;
 
 .titre_app
 {
-    font-size: 150px;
+    font-size: 8rem;
     margin-top: 100px;
 }
 
@@ -669,6 +671,7 @@ opacity: 0;
 {
     font-size: 2.5rem;
     height:50%;
+    color:#fff;
     text-align: center;
 }
 #piano
@@ -739,7 +742,7 @@ opacity: 0;
 .titre_jouer{
 
     margin-top:100px;
-    font-size: 150px;
+    font-size: 8rem;
     margin-bottom:100px;
 }
 #texte_jouer
@@ -767,7 +770,6 @@ opacity: 0;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin-top:2em;
     font-size:4rem;
-    text-align: center;
     }
 .auteur
 {
@@ -885,11 +887,6 @@ footer{
     }
 
     
-    #image_vec
-    {
-        display:none;
-    }
-
     
 
     .titre_ap, .titre_jouer, .titre_dec
@@ -902,9 +899,7 @@ footer{
     }
     
     
-    #ateliers{
-        flex-direction: column;
-    }
+    
 
     #eveil{
 
@@ -935,12 +930,113 @@ footer{
 
         margin-top:200px
     }
-}    
+}
+/*--------------medi0a 769 1500 --------------------------------*/
+@media (max-width :1799px) and (min-width:769px)
+{
+    .presentation{height:1300px;}
+    .texte_pre
+    {
+        font-size: 3vw;
+        
+    }
+    #eveil{
 
-/*------------------MINI MEDIA Q-----------------------*/
+        height:900px;
+    }
+
+    #eveil img{ max-height:350px;}
+
+    #eveil .bloc_text {
+        font-size:0.9rem;
+        margin:0;
+        width:90%;
+    }
+
+    #arpege{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #arpege h1
+    {
+        font-size:10rem;
+    }
+    #arpege h2{font-size:2rem;}
+    #arpege h3{font-size:2rem}
+    #parcours{
+
+        flex-direction: column;
+        width:100%;
+        height:900px;
+    
+       }
+       #parcours .bloc_text{
+        
+        width:90%;
+        font-size: 0.9rem;
+       }
+       #parcours .bloc_text h2{align-self :center;}
+    #img_parc_1{
+
+        display: block;
+        width:100%;
+        max-width:500px;
+        height:500px;
+        border:solid black 1px;
+        margin-top: -200px;
+        align-self: center;
+     }
+     #img_parc_2
+     {
+        display:none;
+     }
+#apprendre{margin-top : 200px;}
+#apprendre .bloc_text{font-size: 2rem;}
+     #apprendre img{
+
+        max-width:600px;
+     }
+    .slider{
+        margin-top:0;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;
+    
+     }
+     .mamaDiv{width:450px;
+    margin-top:0px;}
+     #petitCont{margin:0;width:auto;height:500px}
+     #right{left:88%;}
+     .texte{width:auto;}
+
+     #ateliers{
+
+        width:80%;
+        height:600px;
+        overflow-y: hidden;
+        overflow-x:scroll;
+     }
+     #chambre{
+
+        min-width:400px;
+     }
+     #rock{
+
+        min-width:400px;
+     }
+     #trad{        min-width:400px;
+     }
+     #choeur{        min-width:400px;
+     }
+}
+
+@media(max-width:980px){#ban nav a{font-size: 1.3rem;}}
+/*------------------------------------------------------MINI MEDIA Q---------------------------------------------------------*/
 
 
-@media (max-width : 576px){
+@media (max-width : 768px){
 
     .post
     {
@@ -954,45 +1050,70 @@ footer{
 
         display:none;
     }
-    #menu_2{display:block;}
+    #menu_2{
+        
+        display:block;
+    }
     .hamburger{
+
         display: flex;
     }
     #inscription{
 
         margin-right: 10px;
     }
-    #presentation{width:100%;
+    #presentation{
+       
+        width:100%;
     }
     #arpege
     {
         align-items: center;
     }
+    #image_vec{
+        display:block;
+        margin-right: 0px;
+    }
+   .doudou{
+    
+        width:100%;
+        height:100%;;
+    }
    #arpege h1{
 
-    font-size: 6rem;
-    text-shadow:2px 2px 5px black;
+        display:none;
+        font-size: 6rem;
+        text-shadow:2px 2px 5px black;
 
 
    }
    #arpege h2{
+
     margin-top:30px;
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
+
    }
-   #arpege h3{margin-top:30px;font-size:2rem;font-weight:bold;text-align: center;}
+   #arpege h3{
+    display:none;
+    margin-top:30px;
+    font-size:2rem;
+    font-weight:bold;
+    text-align: center;
+    }
 
 
    .titre_dec, .titre_jouer, .titre_app
    {
-    font-size: 5rem;
+    font-size:15vw;
    }
 .texte_pre{
 
     width:90%;
-    
-}
+    font-size:4vw;
+    margin-bottom:0px;
+    }
 
 #decouvrir{
 
@@ -1000,9 +1121,11 @@ footer{
     color:#fff;
 }
    #parcours{
+
     flex-direction: column;
     width:100%;
-    height:570px;
+    height:500px;
+
    }
 
    #eveil{
@@ -1010,33 +1133,46 @@ footer{
     height:600px;
     
    }
+
    #eveil img{
 
-    width :450px;
+    width :100%;
+    max-width:500px;
     height: 300px;
+    
    }
-#eveil .bloc_text{
+
+    #eveil .bloc_text{
+
     width:90%;
     margin: auto;
-}
+    }
    
-   #eveil h2{font-size: 2em;}
-  #eveil .bloc_text p{
+   #eveil h2{
+
+    font-size: 2em;
+    }
+    #eveil .bloc_text p{
 
     font-size: 1.3rem;
 
    }
+   #parcours .bloc_text{margin-top:100px;}
 
-   #parcours .bloc_text h2{font-size: 1.8em;}
-   #parcours .bloc_text p{font-size: 1.3em;}
+   #parcours .bloc_text h2{font-size: 1.8em; align-self: center;text-align:center}
+   #parcours .bloc_text p{font-size: 1.3em;margin-top:50px}
    #parcours .bloc_text .plus{margin-top:10px;}
+   
+
  #img_parc_1{
 
     display: block;
-    width:auto;
+    width:100%;
+    max-width:500px;
     height:500px;
     border:solid black 1px;
     margin-top: -300px;
+    align-self: center;
  }
  #img_parc_2
  {
@@ -1052,12 +1188,11 @@ footer{
 }
 #apprendre .bloc_text p{font-size:1.5rem;}
  #apprendre img{
-    width:400px;
+    width:100%;
+    max-width:500px;
 
  }
- #ateliers{
-    display:none;
- }
+ 
 
  /*--------------slider-------------------*/
  .slider{
@@ -1067,14 +1202,52 @@ footer{
     background-color: #fff;
 
  }
- .mamaDiv{width:450px;
-margin-top:0px;}
+ .mamaDiv{width:375px;
+margin-top:0px;
+}
+#slide img{width:375px;
+height:375px;
+}
  #petitCont{margin:0;width:auto;height:300px}
- #right{left:88%;}
+ #right{left:60%;}
+ #left{left:30%;}
  .texte{width:auto;}
  #titre_choisir{display:none;}
  /*jouer*/
+#jouer{
 
+    margin-top:0px;
+    color:#fff;
+    background-color: #900c3f;
+}
+ .citation{ font-size:3rem}
+#texte_jouer{
+
+    padding: 20px;
+text-align:start;}
+
+/*-------------------------atelier-----------------------------*/
+
+#ateliers{
+
+    flex-direction : column;
+    align-items: center;
+    width:375px;
+    height:2000px;
+}
+#section_1, #section_2{
+
+    flex-direction: column;
+    
+}
+.petit_bloc{
+
+    width: 375px;
+}
+.image_atelier{
+
+    width:375px;
+}
 /*contact*/
 
 .post{

@@ -7,16 +7,29 @@ var parcours =document.getElementById("parcours")
 var apprendre=document.getElementById('apprendre')
 var decouvrir=document.getElementById("decouvrir")
 var jouer =document.getElementById("jouer")
+var pos_decouvrir=decouvrir.getBoundingClientRect()
+var pos_d=pos_decouvrir.y;
+var pos_app=apprendre.getBoundingClientRect();
+var pos_a=pos_app.y;
+var pos_jouer=jouer.getBoundingClientRect()
+var pos_j=pos_jouer.y;
+console.log('pos_ d =' + pos_d);
+console.log('pos_ a =' + pos_a);
+console.log('pos_ j =' + pos_j);
+
 
 window.onscroll = function (event)
 {
 
     var scroll=window.pageYOffset;
-    pos_decouvrir=decouvrir.getBoundingClientRect()
-    pos_app=apprendre.getBoundingClientRect()
-    pos_jouer=jouer.getBoundingClientRect()
-    
-    if(scroll<=pos_decouvrir.y){
+   
+    scroll = scroll + 100;
+    console.log('scroll : '+scroll);
+    console.log('pos_ d =' + pos_d);
+console.log('pos_ a =' + pos_a);
+console.log('pos_ j =' + pos_j);
+
+    if(scroll<pos_d){
    
     ban.style.backgroundColor='#22b9a1'
     menu_2.style.backgroundColor='#22b9a1'
@@ -24,17 +37,17 @@ window.onscroll = function (event)
 
 }
 
-    else if(scroll >=1100 && scroll <3300)
+    else if((scroll) >= pos_d && scroll <= pos_a)
     {
        
         ban.style.backgroundColor='#f39c12'
         menu_2.style.backgroundColor='#f39c12'
 
         if(scroll >=1300 && scroll <1900)
-    {
-        eveil.style.backgroundColor='#f39c12'
-        eveil.style.color="#fff"
-    }
+        {
+            eveil.style.backgroundColor='#f39c12'
+            eveil.style.color="#fff"
+        }
         else if(scroll >1900){
             parcours.style.backgroundColor='#f39c12'
             parcours.style.color='#fff'
@@ -43,13 +56,13 @@ window.onscroll = function (event)
     }
     
 
-    else if(scroll>=3300 && scroll < 5700)
+    else if(scroll>=pos_a && scroll <= pos_j)
     {
         ban.style.backgroundColor='#22b9a1'
         menu_2.style.backgroundColor='#22b9a1'
     }
 
-    else if(scroll >=5700 ){
+    else if(scroll >= pos_j){
 
         ban.style.backgroundColor='#900c3f'
         menu_2.style.backgroundColor='#900c3f'
@@ -170,7 +183,7 @@ function backChange(number){
     }
 }
 
-/*CAROU*/
+/*----------------------CAROU------------------------*/
 
 var i= 0;
 var images=['jouer_1.png','jouer_2.png','jouer_3.png'];
@@ -199,7 +212,7 @@ window.setInterval(function(){
     changeImg()
 },4000);
 
-/*petit bloc*/
+/*-----------------petit bloc--------------------------*/
 
 var chambre=document.getElementById('chambre')
 var rock=document.getElementById('rock')
@@ -243,7 +256,7 @@ var choeur=document.getElementById("choeur")
         rock.classList.remove("change")
 
     })
-
+/*menu hamburger */
 
     const hamburger = document.querySelector('.hamburger');
 
@@ -254,5 +267,12 @@ var choeur=document.getElementById("choeur")
         menu_2.classList.toggle("move")
     })
 
+    const lien= document.querySelector('.lien');
+
+    menu_2.addEventListener('click',()=>{
+    menu_2.classList.remove("move");
+    hamburger.classList.remove('active');
+    
+})
 
     

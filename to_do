@@ -1,22 +1,20 @@
-de 375 à 768
+issue :
 
-OK
-
-769 à 1400
-
-ok
-
-widht >1800
-
+text_pre trop grand (<769) mais globalement pas adapté à tous les formats
 problème slider : les images mettent du temps à charger
 règler les vitesses bloc texte et background 
-vitesse background parcours pas la même que eveil
-faire footer
-Faire qq chose pour les titres 
+vitesse background parcours pas la même que eveile 
+pas d'affichage du back slider first 
+
+
+
+to do :
+
+incorporer le mail dans le menu ? (<769)
+finir footer
+faire qq chose pour les titres (Dec, App, Jouer)
+comment mettre en évidence le scrollX des ateliers ?
+Faire readme pour expliquer le projet ainsi que les features et les bugs
 
  
-pas d'affichage du back slider first 
-photo apprendre placement bof
-
-atelier prb 
  

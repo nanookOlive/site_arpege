@@ -121,7 +121,6 @@ left.addEventListener('click', ()=>{
         margePlus += 500;
         flag --
     sli.style.marginLeft = margePlus +'px';
-    barre_droite.style.width=(flag * (100/5))+'%';
 
     }
     backChange(flag)
@@ -135,7 +134,6 @@ right.addEventListener('click', ()=>{
     {margePlus -=500;
         flag ++
     sli.style.marginLeft = margePlus +'px';
-    barre_droite.style.width=(flag *(100/5))+'%';
 
     }
 

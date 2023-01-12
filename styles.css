@@ -852,6 +852,7 @@ opacity: 0;
 .en_savoir
 {
     text-decoration: none;
+ 
     color:black;
     padding-top:30px;
 }
@@ -878,13 +879,64 @@ footer ul li{
     list-style: none;
     margin:5px;
 }
-footer a{
-    text-decoration: none;   
-    color :#fff;
+
+
+#footerTop{
+
+    display:flex;
+    width:100%;
+    height:75%;
+    justify-content : space-around;
+    align-items: center;
+}
+
+.nous_suivre ul
+{
+    padding:0px;
+}
+.map{
+
+    display:flex;
+}
+.logo_footer{
+    width: 100px;
+    height:100px;
+}
+.item{
+
+    margin:30px;
+}
+.item ul{
+    display:flex;
+    flex-direction: column;
+    padding:0px;
+}
+.item ul a{
+    text-decoration: none;
+}
+#footerBottom{
+
+    height:25%;
+    display: flex;
+    justify-content: center;
 }
 
 
+a {
+    color :#FFF;
+}
+.logo_suivre{
 
+    width:50px;
+    height:50px;
+}
+.nous_suivre a,  #footerBottom a {
+    text-decoration: none;
+}
+.mention{
+
+    align-self: flex-end;
+}
 /*-------------------media Q ---------------------------------*/
 @media(max-width:1800px) 
 {
@@ -1035,7 +1087,6 @@ footer a{
         height:600px;
         overflow-y: hidden;
         overflow-x:scroll;
-        scrollbar-width: none;
         
     }
      #chambre{
@@ -1052,8 +1103,13 @@ footer a{
      #choeur{        min-width:400px;
      }
 }
-
-@media(max-width:980px){#ban nav a{font-size: 1.3rem;}}
+#footerBottom{
+    font-size:0.8rem;
+}
+@media(max-width:980px){#ban nav a{font-size: 1.3rem;
+}
+.logo_footer{display: none;}
+}
 /*------------------------------------------------------MINI MEDIA Q---------------------------------------------------------*/
 
 
@@ -1279,4 +1335,38 @@ text-align:start;}
 }
 .post::after
 {display:none;}
+/*-----------------------footer----------------------*/
+footer{
+
+    height:500px;
+
+}
+#footerTop{
+
+    font-size: 0.8rem;
+}
+.mention{
+
+    font-size: 0.65rem;
+    padding:0px;
+}
+
+
+.nous_suivre
+{
+    height:100%;
+}
+.nous_suivre ul{
+    flex-direction: column;
+}
+.nous_suivre ul li{
+
+    margin:20px;
+}
+.map{
+
+    flex-direction: column;
+}
+
+.logo_footer{display:none;}
 }

@@ -1,4 +1,4 @@
-
+/**/
 var bou=document.getElementsByTagName('body')[0];
 bou.style.backgroundColor='#fff';
 var ban=document.getElementById("ban");

@@ -24,10 +24,7 @@ window.onscroll = function (event)
     var scroll=window.pageYOffset;
    
     scroll = scroll + 100;
-    console.log('scroll : '+scroll);
-    console.log('pos_ d =' + pos_d);
-console.log('pos_ a =' + pos_a);
-console.log('pos_ j =' + pos_j);
+    
 
     if(scroll<pos_d){
    

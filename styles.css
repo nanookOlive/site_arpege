@@ -125,7 +125,6 @@ textarea
     width: 100%;
     height: 100px;
     background-color:rgba(34, 185, 161, 0.8);
- /*   box-shadow: 2px 2px 5px 2px  black;*/
     transition: background 1s ease;
     
 
@@ -151,7 +150,7 @@ textarea
 
     position: absolute;
     display:block;
-    width:80px;
+    width:55px;
     height:5px;
     background-color: #fff;
     transition:all 200ms ease; 
@@ -175,13 +174,11 @@ textarea
 
 }
 
-
 .active .line_2
 {
 
 opacity: 0;
 }
-
 
 #logo img
 {
@@ -224,10 +221,13 @@ opacity: 0;
     border-bottom:3px solid white;
 
 }
-.menu .jou:hover{    border-bottom:3px solid white; transition: all 100ms ease;
+.menu .jou:hover{    
+    border-bottom:3px solid white; 
+    transition: all 100ms ease;
 }
 .menu .app:hover{
-    border-top:3px solid white; transition:all 100ms ease;
+    border-top:3px solid white; 
+    transition:all 100ms ease;
 
 }
 
@@ -305,11 +305,16 @@ opacity: 0;
 .presentation{
 
     width:90%;
-    height:800px;
+    height:1500px;
     display:flex;
+    flex-direction: column;
 
 }
+.bloc_haut_pre{
 
+    display: flex;
+    flex-direction: row;;
+}
 #arpege
 {
     width:50%;
@@ -375,7 +380,10 @@ opacity: 0;
     margin-bottom: 150px;
     margin-top: 100px;
     align-self:flex-start;
+   
+   
 }
+
 #decouvrir
 {
 
@@ -893,10 +901,23 @@ footer ul li{
 .nous_suivre ul
 {
     padding:0px;
+    display: flex;
+    align-items: center;
+}
+.nous_suivre{
+
+    width:40%;
+    padding-left: 100Px;
+    
+}
+.nous_suivre ul li {
+
+    margin:25px;
 }
 .map{
 
     display:flex;
+    width:60%;
 }
 .logo_footer{
     width: 100px;
@@ -927,10 +948,10 @@ a {
 }
 .logo_suivre{
 
-    width:50px;
-    height:50px;
+    width:40px;
 }
 .nous_suivre a,  #footerBottom a {
+
     text-decoration: none;
 }
 .mention{
@@ -1002,12 +1023,24 @@ a {
     }
 }
 /*--------------medi0a 769 1500 --------------------------------*/
+
 @media (max-width :1799px) and (min-width:769px)
 {
-    .presentation{height:1300px;}
+    .bloc_haut_pre{
+        flex-direction: column;
+        align-items: center;}
+    .doudou{
+
+    width:50%;
+    }
+    .nous_suivre
+    {
+        height:100%;
+        padding-left:10px;
+    }
     .texte_pre
     {
-        font-size: 3vw;
+        font-size: 1.5rem;
         
     }
     #eveil{
@@ -1015,7 +1048,10 @@ a {
         height:900px;
     }
 
-    #eveil img{ max-height:350px;}
+    #eveil img{ 
+        
+        max-height:350px;
+    }
 
     #eveil .bloc_text {
         font-size:0.9rem;
@@ -1033,21 +1069,28 @@ a {
     {
         font-size:10rem;
     }
-    #arpege h2{font-size:2rem;}
-    #arpege h3{font-size:2rem}
+    #arpege h2{
+        font-size:2rem;
+    }
+    #arpege h3{
+        font-size:2rem
+    }
     #parcours{
 
         flex-direction: column;
         width:100%;
         height:900px;
     
-       }
-       #parcours .bloc_text{
+    }
+    #parcours .bloc_text{
         
         width:90%;
         font-size: 0.9rem;
-       }
-       #parcours .bloc_text h2{align-self :center;}
+    }
+    #parcours .bloc_text h2{
+        align-self :center;
+    }
+
     #img_parc_1{
 
         display: block;
@@ -1062,8 +1105,12 @@ a {
      {
         display:none;
      }
-#apprendre{margin-top : 200px;}
-#apprendre .bloc_text{font-size: 2rem;}
+    #apprendre{
+        margin-top : 200px;
+    }
+    #apprendre .bloc_text{
+        font-size: 2rem;
+    }
      #apprendre img{
 
         max-width:600px;
@@ -1072,14 +1119,24 @@ a {
         margin-top:0;
         flex-direction: column;
         align-items: center;
-        background-color: #fff;
+        background-color:#f39c12;
     
      }
-     .mamaDiv{width:450px;
-    margin-top:0px;}
-     #petitCont{margin:0;width:auto;height:500px}
-     #right{left:88%;}
-     .texte{width:auto;}
+     .mamaDiv{
+        width:450px;
+        margin-top:0px;
+    }
+     #petitCont{
+        margin:0;
+        width:auto;
+        height:500px;}
+
+     #right{
+        left:88%;
+    }
+     .texte{
+        width:auto;
+    }
 
      #ateliers{
 
@@ -1098,9 +1155,11 @@ a {
         min-width:400px;
      }
    
-     #trad{        min-width:400px;
+     #trad{
+        min-width:400px;
      }
-     #choeur{        min-width:400px;
+     #choeur{
+        min-width:400px;
      }
 }
 #footerBottom{
@@ -1115,6 +1174,9 @@ a {
 
 @media (max-width : 768px){
 
+    .bloc_haut_pre{
+        flex-direction: column;
+        align-items: center;}
     .post
     {
         display: none;
@@ -1142,7 +1204,9 @@ a {
     #presentation{
        
         width:100%;
+        height:1000px;
     }
+    
     #arpege
     {
         align-items: center;
@@ -1156,6 +1220,7 @@ a {
         width:100%;
         height:100%;;
     }
+
    #arpege h1{
 
         display:none;
@@ -1188,7 +1253,7 @@ a {
 .texte_pre{
 
     width:90%;
-    font-size:4vw;
+    font-size: 1.2rem;
     margin-bottom:0px;
     }
 
@@ -1236,9 +1301,18 @@ a {
    }
    #parcours .bloc_text{margin-top:100px;}
 
-   #parcours .bloc_text h2{font-size: 1.8em; align-self: center;text-align:center}
-   #parcours .bloc_text p{font-size: 1.3em;margin-top:50px}
-   #parcours .bloc_text .plus{margin-top:10px;}
+   #parcours .bloc_text h2{
+    font-size: 1.8em; 
+    align-self: center;
+    text-align:center;
+}
+   #parcours .bloc_text p{
+    font-size: 1.3em;
+    margin-top:50px;
+}
+   #parcours .bloc_text .plus{
+    margin-top:10px;
+}
    
 
  #img_parc_1{
@@ -1264,7 +1338,9 @@ a {
     color:#fff;
 }
 #apprendre .bloc_text p{font-size:1.5rem;}
- #apprendre img{
+
+#apprendre img{
+
     width:100%;
     max-width:500px;
 
@@ -1276,20 +1352,36 @@ a {
     margin-top:0;
     flex-direction: column;
     align-items: center;
-    background-color: #fff;
 
  }
- .mamaDiv{width:375px;
-margin-top:0px;
+
+.mamaDiv{
+    width:375px;
+    margin-top:0px;
 }
-#slide img{width:375px;
-height:375px;
+
+#slide img{
+    width:375px;
+    height:375px;
 }
- #petitCont{margin:0;width:auto;height:300px}
- #right{left:60%;}
- #left{left:30%;}
- .texte{width:auto;}
- #titre_choisir{display:none;}
+
+ #petitCont{
+    margin:0;
+    width:auto;
+    height:300px;
+}
+ #right{
+    left:60%;
+}
+ #left{
+    left:30%;
+}
+ .texte{
+    width:auto;
+}
+ #titre_choisir{
+    display:none;
+}
  /*jouer*/
 #jouer{
 
@@ -1297,11 +1389,15 @@ height:375px;
     color:#fff;
     background-color: #900c3f;
 }
- .citation{ font-size:3rem}
+.citation{
+    font-size:3rem;
+}
 #texte_jouer{
 
     padding: 20px;
-text-align:start;}
+    text-align:start;
+
+}
 
 /*-------------------------atelier-----------------------------*/
 
@@ -1334,7 +1430,9 @@ text-align:start;}
     Z-index:1;
 }
 .post::after
-{display:none;}
+{
+    display:none;
+}
 /*-----------------------footer----------------------*/
 footer{
 
@@ -1355,9 +1453,11 @@ footer{
 .nous_suivre
 {
     height:100%;
+    padding-left:10px;
 }
 .nous_suivre ul{
     flex-direction: column;
+
 }
 .nous_suivre ul li{
 

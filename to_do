@@ -1,19 +1,16 @@
 issue :
 
-text_pre trop grand (<769) mais globalement pas adapté à tous les formats
+
 problème slider : les images mettent du temps à charger
 règler les vitesses bloc texte et background 
-vitesse background parcours pas la même que eveile 
-pas d'affichage du back slider first 
+vitesse background parcours pas la même que eveile  
 
 
 
 to do :
 
-incorporer le mail dans le menu ? (<769)
-finir footer - trouver les png des logos réseau ; 
-faire qq chose pour les titres (Dec, App, Jouer)
-comment mettre en évidence le scrollX des ateliers ?
+
+
 Faire readme pour expliquer le projet ainsi que les features et les bugs
 
  

@@ -183,7 +183,7 @@ function backChange(number){
 /*----------------------CAROU------------------------*/
 
 var i= 0;
-var images=['jouer_1.png','jouer_2.png','jouer_3.png'];
+var images=['res/jouer_1.png','res/jouer_2.png','res/jouer_3.png'];
 var ti= 2000;
 
 

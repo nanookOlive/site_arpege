@@ -6,7 +6,7 @@
 
 - réaliser une page statique
 - proposer une charte grahique
-- 
+
 
 
 # Réalisations 

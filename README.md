@@ -1,7 +1,18 @@
-# site_arpege
+# <center>Arpège <center>
 
-Projet de fin d'UE pour le CNAM. C'est la première page que j'ai conçu. 
-J'ai pu apprendre un peu de JS à cette occasion. Et effectuer la mise en ligne.
-Le responsive a été traité dans la mesure du temps imparti. 
+[Cette](http://nanookpandora.com/arpege/) page est un travail réalisé dans le but de valider une unité d'enseignement au CNAM. C'est aussi la première fois que je travaille avec Javascript.
 
-nanookpandora.com/arpege/
+# Les consignes
+
+- réaliser une page statique
+- proposer une charte grahique
+- 
+
+
+# Réalisations 
+
+- menu accordéon sur certains contenus
+- page responsive
+- caroussel d'images
+- slider 
+- menu burger pour la version mobile 

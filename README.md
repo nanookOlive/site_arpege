@@ -1,4 +1,4 @@
-# <center>Arpège <center>
+# <center>Arpège (*projet étude*) <center>
 
 [Cette page](https://nanookpandora.com/arpege/) est un travail réalisé dans le but de valider une unité d'enseignement au CNAM. C'est aussi la première fois que je travaille avec Javascript.
 

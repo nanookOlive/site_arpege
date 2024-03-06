@@ -1,6 +1,6 @@
 # <center>Arpège <center>
 
-[Cette page](http://nanookpandora.com/arpege/) est un travail réalisé dans le but de valider une unité d'enseignement au CNAM. C'est aussi la première fois que je travaille avec Javascript.
+[Cette page](https://nanookpandora.com/arpege/) est un travail réalisé dans le but de valider une unité d'enseignement au CNAM. C'est aussi la première fois que je travaille avec Javascript.
 
 # Les consignes
 

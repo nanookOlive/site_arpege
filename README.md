@@ -5,7 +5,7 @@
 # Les consignes
 
 - réaliser une page statique
-- proposer une charte grahique
+- proposer une charte graphique
 
 
 
@@ -13,6 +13,6 @@
 
 - menu accordéon sur certains contenus
 - page responsive
-- caroussel d'images
+- carrousel d'images
 - slider 
 - menu burger pour la version mobile 
